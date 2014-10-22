@@ -1,6 +1,6 @@
 #ignore misc BYOND files
 *.log
-#*.int
+*.int
 *.rsc
 *.dmb
 *.lk
