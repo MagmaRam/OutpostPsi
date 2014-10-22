@@ -1,0 +1,11 @@
+#ignore misc BYOND files
+*.log
+#*.int
+*.rsc
+*.dmb
+*.lk
+data/
+maps/backup/
+
+# Ignore tgstation2 map, used purely for reference
+maps/tgstation2.dmm
