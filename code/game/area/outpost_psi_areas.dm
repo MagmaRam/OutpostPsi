@@ -38,3 +38,17 @@
 /area/engineering_outpost/dronefab
 	name = "\improper Engineering Outpost Drone Fabrication"
 	icon_state = "blue2"
+
+// Generic apartment rooms on CentCom
+
+/area/centcom/generic/apartment_1
+	name = "\improper Generic Apartment 1"
+
+/area/centcom/generic/apartment_2
+	name = "\improper Generic Apartment 2"
+
+/area/centcom/generic/apartment_3
+	name = "\improper Generic Apartment 3"
+
+/area/centcom/generic/apartment_4
+	name = "\improper Generic Apartment 4"
