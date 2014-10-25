@@ -2,9 +2,9 @@
 	name = "labcoat"
 	desc = "A suit that protects against minor chemical spills."
 	icon_state = "labcoat_open"
-	item_state = "labcoat"
+	item_state = "labcoat" //Is this even used for anything?
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/device/analyzer,/obj/item/stack/medical,/obj/item/weapon/dnainjector,/obj/item/weapon/reagent_containers/dropper,/obj/item/weapon/reagent_containers/syringe,/obj/item/weapon/reagent_containers/hypospray,/obj/item/device/healthanalyzer,/obj/item/device/flashlight/pen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/weapon/reagent_containers/glass/beaker,/obj/item/weapon/reagent_containers/pill,/obj/item/weapon/storage/pill_bottle,/obj/item/weapon/paper)
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 50, rad = 0)
 	sprite_sheets = list("Vox" = 'icons/mob/species/vox/suit.dmi')
@@ -17,6 +17,7 @@
 		if(!usr.canmove || usr.stat || usr.restrained())
 			return 0
 
+		//Why???
 		switch(icon_state)
 			if("labcoat_open")
 				src.icon_state = "labcoat"
@@ -93,7 +94,7 @@
 			else
 				usr << "You attempt to button-up the velcro on your [src], but you failed to do so."
 				return
-		usr.update_inv_wear_suit()	//so our overlays update
+		update_clothing_icon()	//so our overlays update
 
 /obj/item/clothing/suit/storage/labcoat/red
 	name = "red labcoat"

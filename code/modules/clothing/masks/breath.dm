@@ -4,6 +4,7 @@
 	icon_state = "breath"
 	item_state = "breath"
 	flags = FPRINT | TABLEPASS | MASKCOVERSMOUTH | MASKINTERNALS
+	body_parts_covered = 0
 	w_class = 2
 	gas_transfer_coefficient = 0.10
 	permeability_coefficient = 0.50
@@ -33,7 +34,7 @@
 				flags |= MASKCOVERSMOUTH | MASKINTERNALS
 				icon_state = "breath"
 				usr << "You pull the mask up to cover your face."
-			usr.update_inv_wear_mask()
+			update_clothing_icon()
 
 /obj/item/clothing/mask/breath/medical
 	desc = "A close-fitting sterile mask that can be connected to an air supply."
