@@ -688,7 +688,6 @@
 	desc = "A black hat.  The inside has the words, \"Lieutenant James Girard, LPD SWAT Team Four.\""
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "swatcap"
-	body_parts_covered = 0
 
 /obj/item/clothing/head/welding/fluff/alice_mccrea_1 //madmalicemccrea: Alice McCrea
 	name = "flame decal welding helmet"
@@ -713,10 +712,6 @@
 	desc = "Hey, I think we're missing a hazard vest..."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "taryn_kifer_1"
-	body_parts_covered = 0
-
-/obj/item/clothing/head/fluff
-	body_parts_covered = 0
 
 /obj/item/clothing/head/fluff/edvin_telephosphor_1 //foolamancer: Edvin Telephosphor
 	name = "Edvin's Hat"
@@ -758,7 +753,6 @@
 	desc = "A labcoat with a few markings denoting it as the labcoat of roboticist."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "aeneasrinil"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 
 /obj/item/clothing/suit/storage/labcoat/fluff/pink //spaceman96: Trenna Seber
 	name = "pink labcoat"
@@ -787,7 +781,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "mantle-unathi"
 	item_state = "mantle-unathi"
-	body_parts_covered = 0
+	body_parts_covered = UPPER_TORSO
 
 /////////////////////////////// 50_n00b - R.A.N.G.E.'s blue dress //////////////////////////
 
@@ -797,7 +791,6 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "br_dress"
 	item_state = "br_dress"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 //////////////////////////////// Broseph Stylin - Lombardi's Jacket ///////////////////////////
 
@@ -807,7 +800,6 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "lombardi_jacket"
 	item_state = "lombardi_jacket"
-	body_parts_covered = UPPER_TORSO|ARMS
 
 	verb/toggle()
 		set name = "Toggle Jacket Buttons"
@@ -820,11 +812,11 @@
 		switch(icon_state)
 			if("lombardi_jacket")
 				src.icon_state = "lombardi_jacket_open"
-				usr << "You unbutton the jacket."
+				usr << "You unbutton up the jacket."
 			if("lombardi_jacket_open")
 				src.icon_state = "lombardi_jacket"
 				usr << "You button up the jacket."
-		update_clothing_icon()
+		usr.update_inv_wear_suit()
 
 //////////// Uniforms ////////////
 
@@ -860,7 +852,6 @@
 	icon_state = "lilith_uniform"
 	item_state = "lilith_uniform"
 	item_color = "lilith_uniform"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/under/fluff/ana_issek_1 //suethecake: Ana Issek
 	name = "retired uniform"
@@ -869,7 +860,6 @@
 	icon_state = "ana_uniform"
 	item_state = "ana_uniform"
 	item_color = "ana_uniform"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/under/fluff/olddressuniform //desiderium: Momiji Inubashiri
 	name = "retired dress uniform"
@@ -903,7 +893,6 @@
 	icon_state = "tian_dress"
 	item_state = "tian_dress"
 	item_color = "tian_dress"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/rank/bartender/fluff/classy	//searif: Ara Al-Jazari
 	name = "classy bartender uniform"
@@ -969,7 +958,7 @@
 
 	src.icon_state = "[item_color]"
 	src.item_state = "[item_color]"
-	update_clothing_icon()
+	usr.update_inv_w_uniform()
 
 ////// Wyatt's Ex-Commander Jumpsuit - RawrTaicho
 /obj/item/clothing/under/fluff/wyatt_1
@@ -1033,7 +1022,6 @@
 	icon = 'icons/obj/custom_items.dmi'
 	item_state = "head_m"
 	icon_state = "head_m"
-	body_parts_covered = FACE|EYES
 
 ////// Small locket - Altair An-Nasaqan - Serithi
 
@@ -1112,7 +1100,6 @@
 	flags = FPRINT|TABLEPASS
 	w_class = 2
 	slot_flags = SLOT_MASK
-	body_parts_covered = 0
 
 //////////// Shoes ////////////
 
@@ -1155,7 +1142,6 @@
 	icon_state = "medical_short"
 	item_state = "medical_short"
 	item_color = "medical_short"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/suit/storage/labcoat/fluff/red
 	name = "red labcoat"
@@ -1256,7 +1242,6 @@
 	icon_state = "mai_yang"
 	item_state = "mai_yang"
 	item_color = "mai_yang"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/fluff/sakura_hokkaido_kimono
 	name = "Sakura Kimono"

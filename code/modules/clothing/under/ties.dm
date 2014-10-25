@@ -342,7 +342,7 @@
 		..(over_object)
 
 /obj/item/clothing/tie/storage/attackby(obj/item/W as obj, mob/user as mob)
-	return hold.attackby(W, user)
+	hold.attackby(W, user)
 
 /obj/item/clothing/tie/storage/emp_act(severity)
 	hold.emp_act(severity)

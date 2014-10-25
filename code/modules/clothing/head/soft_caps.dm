@@ -7,7 +7,6 @@
 	item_color = "cargo"
 	var/flipped = 0
 	siemens_coefficient = 0.9
-	body_parts_covered = 0
 
 	dropped()
 		src.icon_state = "[item_color]soft"
@@ -26,7 +25,7 @@
 			else
 				icon_state = "[item_color]soft"
 				usr << "You flip the hat back in normal position."
-			update_clothing_icon()	//so our mob-overlays update
+			usr.update_inv_head()	//so our mob-overlays update
 
 /obj/item/clothing/head/soft/red
 	name = "red cap"
