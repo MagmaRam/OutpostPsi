@@ -93,7 +93,7 @@
 			else
 				usr << "You attempt to button-up the velcro on your [src], but you failed to do so."
 				return
-		usr.update_inv_wear_suit()	//so our overlays update
+		update_clothing_icon()	//so our overlays update
 
 /obj/item/clothing/suit/storage/labcoat/red
 	name = "red labcoat"

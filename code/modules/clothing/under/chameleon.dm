@@ -27,7 +27,7 @@
 		icon_state = "psyche"
 		item_color = "psyche"
 		update_icon()
-		usr.update_inv_w_uniform()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Jumpsuit Appearance"
@@ -48,8 +48,7 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		item_color = A.item_color
-		if(usr)
-			usr.update_inv_w_uniform()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //*****************
 //**Chameleon Hat**
@@ -79,7 +78,7 @@
 		icon_state = "greysoft"
 		item_color = "grey"
 		update_icon()
-		usr.update_inv_head()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Hat/Helmet Appearance"
@@ -101,8 +100,7 @@
 		item_state = A.item_state
 		item_color = A.item_color
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_head()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //******************
 //**Chameleon Suit**
@@ -132,7 +130,7 @@
 		icon_state = "armor"
 		item_color = "armor"
 		update_icon()
-		usr.update_inv_wear_suit()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Exosuit Appearance"
@@ -154,8 +152,7 @@
 		item_state = A.item_state
 		item_color = A.item_color
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_wear_suit()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //*******************
 //**Chameleon Shoes**
@@ -185,7 +182,7 @@
 		item_state = "black"
 		item_color = "black"
 		update_icon()
-		usr.update_inv_shoes()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Footwear Appearance"
@@ -206,8 +203,7 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		item_color = A.item_color
-		if(usr)
-			usr.update_inv_shoes()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //**********************
 //**Chameleon Backpack**
@@ -234,7 +230,9 @@
 		icon_state = "backpack"
 		item_state = "backpack"
 		update_icon()
-		usr.update_inv_back()
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_back()
 
 	verb/change()
 		set name = "Change Backpack Appearance"
@@ -255,8 +253,11 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		item_color = A.item_color
-		if(usr)
-			usr.update_inv_back()	//so our overlays update.
+		
+		//so our overlays update.
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_back()
 
 //********************
 //**Chameleon Gloves**
@@ -285,7 +286,7 @@
 		icon_state = "black"
 		item_color = "brown"
 		update_icon()
-		usr.update_inv_gloves()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Gloves Appearance"
@@ -307,8 +308,7 @@
 		item_state = A.item_state
 		item_color = A.item_color
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_gloves()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //******************
 //**Chameleon Mask**
@@ -336,7 +336,8 @@
 		desc = "It's a gas mask."
 		icon_state = "gas_alt"
 		update_icon()
-		usr.update_inv_wear_mask()
+		update_clothing_icon()
+
 	verb/change()
 		set name = "Change Mask Appearance"
 		set category = "Object"
@@ -356,8 +357,7 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_wear_mask()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //*********************
 //**Chameleon Glasses**
@@ -384,7 +384,7 @@
 		desc = "It's a set of mesons."
 		icon_state = "meson"
 		update_icon()
-		usr.update_inv_glasses()
+		update_clothing_icon()
 
 	verb/change()
 		set name = "Change Glasses Appearance"
@@ -405,8 +405,7 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_glasses()	//so our overlays update.
+		update_clothing_icon()	//so our overlays update.
 
 //*****************
 //**Chameleon Gun**
@@ -420,6 +419,7 @@
 	caliber = ".45"
 	origin_tech = "combat=2;materials=2;syndicate=8"
 	ammo_type = "/obj/item/ammo_casing/chameleon"
+	matter = list()
 	var/list/gun_choices = list()
 
 	New()
@@ -435,8 +435,10 @@
 		desc = "It's a desert eagle."
 		icon_state = "deagle"
 		update_icon()
-		usr.update_inv_r_hand()
-		usr.update_inv_l_hand()
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_r_hand()
+			M.update_inv_l_hand()
 
 	verb/change()
 		set name = "Change Gun Appearance"
@@ -457,6 +459,9 @@
 		icon_state = A.icon_state
 		item_state = A.item_state
 		flags_inv = A.flags_inv
-		if(usr)
-			usr.update_inv_r_hand()
-			usr.update_inv_l_hand()	//so our overlays update.
+		
+		//so our overlays update.
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_r_hand()
+			M.update_inv_l_hand()
