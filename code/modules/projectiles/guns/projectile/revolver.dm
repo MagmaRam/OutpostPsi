@@ -99,6 +99,15 @@
 	icon_state = "mateba"
 	origin_tech = "combat=2;materials=2"
 
+/obj/item/weapon/gun/projectile/unreasonable
+	name = "agent's blaster"
+	desc = "An unreasonably powerful revolver designed for the task of retiring rogue androids."
+	icon_state = "stunrevolver"
+	max_shells = 6
+	caliber = "shotgun"
+	ammo_type = "/obj/item/ammo_casing/shotgun"
+	origin_tech = "combat=2;materials=2"
+
 // A gun to play Russian Roulette!
 // You can spin the chamber to randomize the position of the bullet.
 
