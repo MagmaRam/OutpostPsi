@@ -108,7 +108,7 @@
 
 /obj/item/clothing/under/rank/medical
 	desc = "It's made of a special fiber that provides minor protection against biohazards. It has a cross on the chest denoting that the wearer is trained medical personnel."
-	name = "medical doctor's jumpsuit"
+	name = "medic's jumpsuit"
 	icon_state = "medical"
 	item_state = "w_suit"
 	item_color = "medical"

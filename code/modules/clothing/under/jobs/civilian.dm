@@ -179,7 +179,7 @@
 
 /obj/item/clothing/under/rank/miner
 	desc = "It's a snappy jumpsuit with a sturdy set of overalls. It is very dirty."
-	name = "shaft miner's jumpsuit"
+	name = "miner's jumpsuit"
 	icon_state = "miner"
 	item_state = "miner"
 	item_color = "miner"

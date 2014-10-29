@@ -9,7 +9,7 @@ mob/living/carbon/proc/dream()
 		"riches","space","a crash","happiness","pride","a fall","water","flames","ice","melons","flying","the eggs","money",
 		"a head of personnel","a head of security","a chief engineer","a research director","a chief medical officer",
 		"a detective","a warden","an internal affairs agent","a station engineer","a janitor","atmospheric technician",
-		"a quartermaster","a cargo technician","a gardener","a shaft miner","a psychologist","a chemist","a geneticist",
+		"a quartermaster","a cargo technician","a gardener","a miner","a psychologist","a chemist","a geneticist",
 		"a virologist","a roboticist","a cook","a bartender","a counselor","a librarian","a mouse","an ERT member",
 		"a beach","the holodeck","a smokey room","a voice","the cold","a mouse","an operating table","the bar","the rain","a skrell",
 		"a unathi","a tajaran","an AI core","a mining station","a research station","a beaker of strange liquid",
