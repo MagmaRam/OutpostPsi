@@ -54,7 +54,7 @@
 			return
 		cmd_admin_irc_pm()
 		return
-		
+
 
 
 	//Logs all hrefs
@@ -105,7 +105,7 @@
 /client/New(TopicData)
 	TopicData = null							//Prevent calls to client.Topic from connect
 
-	if(connection != "seeker")					//Invalid connection type.
+	if(!(connection in list("seeker", "web")))					//Invalid connection type.
 		return null
 	if(byond_version < MIN_CLIENT_VERSION)		//Out of date client.
 		return null
@@ -254,7 +254,7 @@
 
 //send resources to the client. It's here in its own proc so we can move it around easiliy if need be
 /client/proc/send_resources()
-	
+
 	getFiles(
 		'html/search.js',
 		'html/panels.css',
