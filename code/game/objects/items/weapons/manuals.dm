@@ -1164,6 +1164,7 @@
 					<li><a href="#Foreword">A foreword on using EVA gear</a></li>
 					<li><a href="#Civilian">Donning a Civilian Suit</a></li>
 					<li><a href="#Hardsuit">Putting on a Hardsuit</a></li>
+					<li><a href="#Equipment">Cyclers and Other Modification Equipment</a></li>
 					<li><a href="#Final">Final Checks</a></li>
 				</ol>
 				<br>
@@ -1185,6 +1186,8 @@
 				There is a small slot on the side of the suit where an emergency oxygen tank or extended emergency oxygen tank will fit,
 				but it is recommended to have a full-sized tank on your back for EVA.<BR><BR>
 
+				These suits tend to be wearable by most species. They're large and flexible. They might be pretty uncomfortable for some, though, so keep that in mind.<BR><BR>
+
 				<h2><a name="Hardsuit">Hardsuits</a></h2>
 				<I>Heavy, uncomfortable, still the best option.</I><BR>
 				These suits come in Engineering, Mining, and the Armory. There's also a couple Medical Hardsuits in EVA. These provide a lot more protection than the standard suits.<BR><BR>
@@ -1194,9 +1197,22 @@
 				and then is screwed in for one and a quarter full rotations clockwise, leaving the faceplate directly in front of you. There is a small button on the right side of the helmet that activates the helmet light.
 				The tanks that fasten onto the side slot are emergency tanks, as well as full-sized oxygen tanks, leaving your back free for a backpack or satchel.<BR><BR>
 
+				These suits generally only fit one species. Nanotrasen's are usually human-fitting by default, but there's equipment that can make modifications to the hardsuits to fit them to other species.<BR><BR>
+
+				<h2><a name="Equipment">Modification Equipment</a></li>
+				<I>How to actually make hardsuits fit you.</I><BR>
+				There's a variety of equipment that can modify hardsuits to fit species that can't fit into them, making life quite a bit easier.<BR><BR>
+
+				The first piece of equipment is a suit cycler. This is a large machine resembling the storage pods that are in place in some places. These are machines that will automatically tailor a suit to certain specifications.
+				The largest uses of them are for their cleaning functions and their ability to tailor suits for a species. Do not enter them physically. You will die from any of the functions being activated, and it will be painful.
+				These machines can both tailor a suit between species, and between types. This means you can convert engineering hardsuits to atmospherics, or the other way. This is useful. Use it if you can.<BR><BR>
+
+				There's also modification kits that let you modify suits yourself. These are extremely difficult to use unless you understand the actual construction of the suit. I do not reccomend using them unless no other option is available.
+
 				<h2><a name="Final">Final Checks</a></h2>
 				<ul>
 					<li>Are all seals fastened correctly?</li>
+					<li>If you have modified it manually, is absolutely everything sealed perfectly?</li>
 					<li>Do you either have shoes on under the suit, or magnetic boots on over it?</li>
 					<li>Do you have a mask on and internals on the suit or your back?</li>
 					<li>Do you have a way to communicate with the station in case something goes wrong?</li>
