@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the chief engineer"
+	supervisors = "the executive officer"
 	selection_color = "#fff5cc"
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_emergency_storage, access_external_airlocks, access_construction, access_atmospherics)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_emergency_storage, access_external_airlocks, access_construction, access_atmospherics)

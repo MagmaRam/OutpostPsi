@@ -132,7 +132,7 @@
 	corpseradio = /obj/item/device/radio/headset
 	corpseid = 1
 	corpseidjob = "Chef"
-	corpseidaccess = "Chef"
+	corpseidaccess = "Cook"
 
 
 /obj/effect/landmark/corpse/doctor
@@ -145,7 +145,7 @@
 	corpseshoes = /obj/item/clothing/shoes/black
 	corpseid = 1
 	corpseidjob = "Medical Doctor"
-	corpseidaccess = "Medical Doctor"
+	corpseidaccess = "Medic"
 
 /obj/effect/landmark/corpse/engineer
 	name = "Engineer"
@@ -195,8 +195,8 @@
 	corpseback = /obj/item/weapon/storage/backpack/industrial
 	corpseshoes = /obj/item/clothing/shoes/black
 	corpseid = 1
-	corpseidjob = "Shaft Miner"
-	corpseidaccess = "Shaft Miner"
+	corpseidjob = "Miner"
+	corpseidaccess = "Miner"
 
 /obj/effect/landmark/corpse/miner/rig
 	corpsesuit = /obj/item/clothing/suit/space/rig/mining

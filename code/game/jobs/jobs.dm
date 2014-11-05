@@ -74,7 +74,7 @@ var/list/civilian_positions = list(
 	"Executive Officer",	// Workaround for ID computer
 	"Bartender",
 	"Gardener",
-	"Chef",
+	"Cook",
 	"Janitor",
 	"Cargo Technician",
 	"Miner",

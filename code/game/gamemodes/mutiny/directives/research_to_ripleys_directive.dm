@@ -40,7 +40,7 @@ datum/directive/research_to_ripleys/initialize()
 		ids_to_reassign[R.wear_id] = 0
 
 	special_orders = list(
-		"Reassign all research personnel, excluding the Research Director, to Shaft Miner.",
+		"Reassign all research personnel, excluding the Research Director, to Miner.",
 		"Deliver [MATERIALS_REQUIRED] sheets of metal or minerals via the supply shuttle to CentCom.")
 
 datum/directive/research_to_ripleys/directives_complete()
@@ -54,7 +54,7 @@ datum/directive/research_to_ripleys/get_remaining_orders()
 
 	for(var/id in ids_to_reassign)
 		if(!ids_to_reassign[id])
-			text += "<li>Reassign [id] to Shaft Miner</li>"
+			text += "<li>Reassign [id] to Miner</li>"
 
 	return text
 
@@ -63,7 +63,7 @@ datum/directive/research_to_ripleys/get_remaining_orders()
 	if(!D) return 1
 
 	if(D.ids_to_reassign && D.ids_to_reassign.Find(id_card))
-		D.ids_to_reassign[id_card] = id_card.assignment == "Shaft Miner" ? 1 : 0
+		D.ids_to_reassign[id_card] = id_card.assignment == "Miner" ? 1 : 0
 
 	return 1
 

@@ -41,9 +41,9 @@
 	switch(target_species)
 		if("Human", "Skrell")	//humanoid bodytypes
 			species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
-		else 
+		else
 			species_restricted = list(target_species)
-	
+
 	//Set icon
 	if (sprite_sheets_obj && (target_species in sprite_sheets_obj))
 		icon = sprite_sheets_obj[target_species]
@@ -57,9 +57,9 @@
 			species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
 		if("Human")
 			species_restricted = list("exclude","Skrell","Unathi","Tajaran","Diona","Vox")
-		else 
+		else
 			species_restricted = list(target_species)
-	
+
 	//Set icon
 	if (sprite_sheets_obj && (target_species in sprite_sheets_obj))
 		icon = sprite_sheets_obj[target_species]
@@ -422,6 +422,20 @@ BLIND     // can't see anything
 		update_clothing_icon()
 	else
 		usr << "<span class='notice'>You cannot roll down the uniform!</span>"
+
+/obj/item/clothing/under/proc/add_accessory(obj/item/I, mob/user)
+	if(hastie)
+		return 0
+
+	if(istype(I, /obj/item/clothing/tie))
+		if(user)
+			user.drop_item()
+		hastie = I
+		hastie.on_attached(src, user)
+		update_clothing_icon()
+		return 1
+	else
+		return 0
 
 /obj/item/clothing/under/proc/remove_accessory(mob/user as mob)
 	if(!hastie)
