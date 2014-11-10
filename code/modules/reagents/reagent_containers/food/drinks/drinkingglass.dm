@@ -520,7 +520,7 @@
 					center_of_mass = list("x"=16, "y"=10)
 				if("coffee")
 					icon_state = "hot_coffee"
-					name = "Glass of coffee"
+					name = "Cup of coffee"
 					desc = "Don't drop it, or you'll send scalding liquid everywhere."
 					center_of_mass = list("x"=16, "y"=12)
 				if("bilk")
