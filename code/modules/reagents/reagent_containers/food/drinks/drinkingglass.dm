@@ -608,8 +608,8 @@
 					name = "Glass of ???"
 					desc = "A black ichor with an oily purple sheer on top. Are you sure you should drink this?"
 					center_of_mass = list("x"=16, "y"=5)
-				if("lemonlime")
-					icon_state = "glass_yellow"
+				if("lemon_lime")
+					icon_state = "lemonlime"
 					name = "Glass of lemon-lime soda."
 					desc = "Hope you didn't want orange."
 					center_of_mass = list("x"=16, "y"=10)
