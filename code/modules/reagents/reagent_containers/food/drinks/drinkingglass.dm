@@ -51,8 +51,13 @@
 					center_of_mass = list("x"=16, "y"=10)
 				if("lemonjuice")
 					icon_state  = "lemonglass"
-					name = "Glass of lemonjuice"
+					name = "Glass of lemon juice"
 					desc = "Sour..."
+					center_of_mass = list("x"=16, "y"=10)
+				if("watermelonjuice")
+					icon_state = "glass_red"
+					name = "Glass of watermelon juice"
+					desc = "Not to be confused with tomato juice."
 					center_of_mass = list("x"=16, "y"=10)
 				if("cola")
 					icon_state  = "glass_brown"
@@ -514,10 +519,10 @@
 					desc = "A drink to perk you up and refresh you!"
 					center_of_mass = list("x"=16, "y"=10)
 				if("coffee")
-					icon_state = "glass_brown"
+					icon_state = "hot_coffee"
 					name = "Glass of coffee"
-					desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
-					center_of_mass = list("x"=16, "y"=10)
+					desc = "Don't drop it, or you'll send scalding liquid everywhere."
+					center_of_mass = list("x"=16, "y"=12)
 				if("bilk")
 					icon_state = "glass_brown"
 					name = "Glass of bilk"
@@ -539,15 +544,20 @@
 					desc = "It's grrrrrape!"
 					center_of_mass = list("x"=16, "y"=10)
 				if("grapesoda")
-					icon_state = "grapesoda"
-					name = "Can of Grape Soda"
-					desc = "Looks like a delicious drank!"
+					icon_state = "gsodaglass"
+					name = "Glass of grape soda"
+					desc = "Looks like a delicious drink!"
 					center_of_mass = list("x"=16, "y"=10)
 				if("icetea")
 					icon_state = "icedteaglass"
 					name = "Iced Tea"
 					desc = "No relation to a certain rap artist/ actor."
 					center_of_mass = list("x"=15, "y"=10)
+				if("tea")
+					icon_state = "bigteacup"
+					name = "Tea"
+					desc = "For people who don't drink the other drink."
+					center_of_mass = list("x"=16, "y"=8)
 				if("grenadine")
 					icon_state = "grenadineglass"
 					name = "Glass of grenadine syrup"
@@ -598,6 +608,11 @@
 					name = "Glass of ???"
 					desc = "A black ichor with an oily purple sheer on top. Are you sure you should drink this?"
 					center_of_mass = list("x"=16, "y"=5)
+				if("lemonlime")
+					icon_state = "glass_yellow"
+					name = "Glass of lemon-lime soda."
+					desc = "Hope you didn't want orange."
+					center_of_mass = list("x"=16, "y"=10)
 				else
 					icon_state ="glass_brown"
 					name = "Glass of ..what?"
