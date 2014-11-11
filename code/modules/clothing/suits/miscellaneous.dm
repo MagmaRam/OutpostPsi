@@ -369,3 +369,38 @@
 	cold_protection = UPPER_TORSO|ARMS
 	min_cold_protection_temperature = T0C
 	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/storage/leather_jacket
+	name = "leather jacket"
+	desc = "A black leather coat."
+	icon_state = "leather_jacket"
+	item_state = "leather_jacket"
+	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/leather_jacket/nanotrasen
+	desc = "A black leather coat. The letters NT are proudly displayed on the back."
+	icon_state = "leather_jacket_nt"
+
+//This one has buttons for some reason
+/obj/item/clothing/suit/storage/toggle/brown_jacket
+	name = "leather jacket"
+	desc = "A brown leather coat."
+	icon_state = "brown_jacket"
+	item_state = "brown_jacket"
+	icon_open = "brown_jacket_open"
+	icon_closed = "brown_jacket"
+	body_parts_covered = UPPER_TORSO|ARMS
+
+/obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
+	desc = "A brown leather coat. The letters NT are proudly displayed on the back."
+	icon_state = "brown_jacket_nt"
+	icon_open = "brown_jacket_nt_open"
+	icon_closed = "brown_jacket_nt"
+
+/obj/item/clothing/suit/hoodie
+	name = "grey hoodie"
+	desc = "A warm, grey sweatshirt."
+	icon_state = "grey_hoodie"
+	item_state = "grey_hoodie"
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
