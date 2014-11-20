@@ -14,6 +14,7 @@
 	var/recentpump = 0 // to prevent spammage
 	var/pumped = 0
 	var/obj/item/ammo_casing/current_shell = null
+	var/cocksound = 'sound/weapons/shotgunpump.ogg' //Allows changing the sound, currently used for bolt-action rifles
 
 	isHandgun()
 		return 0
@@ -34,7 +35,7 @@
 
 
 	proc/pump(mob/M as mob)
-		playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
+		playsound(M, cocksound, 60, 1)
 		pumped = 0
 		if(current_shell)//We have a shell in the chamber
 			current_shell.loc = get_turf(src)//Eject casing
