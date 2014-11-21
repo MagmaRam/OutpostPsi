@@ -2,8 +2,9 @@
 language: c
 
 env:
-  BYOND_MAJOR="503"
-  BYOND_MINOR="1224"
+  BYOND_MAJOR="506"
+  BYOND_MINOR="1247"
+  BYOND_SHA512_SUM="ad2ff0600d84c982fb265b2a73b560dac9e6403df7077030276b4870fe77e47f793325c82bc88d1e5a6036aad96419f834147958ac0d3d19e498962ad2b71334"
 
 before_install:
   - sudo apt-get update -qq
@@ -11,6 +12,7 @@ before_install:
 
 install:
   - curl "http://www.byond.com/download/build/${BYOND_MAJOR}/${BYOND_MAJOR}.${BYOND_MINOR}_byond_linux.zip" -o byond.zip
+  - echo "${BYOND_SHA512_SUM} *byond.zip" | sha512sum -c
   - unzip byond.zip
   - cd byond
   - sudo make install
