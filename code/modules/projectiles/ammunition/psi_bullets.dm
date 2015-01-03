@@ -11,3 +11,11 @@
 	name = "chalk rifle round"
 	desc = "A round from a rifle, which uses a chalk bullet."
 	projectile_type = "/obj/item/projectile/bullet/weakbullet/chalk"
+
+/obj/item/ammo_casing/shot
+	name = "lead shot"
+	desc = "Lead shot and powder, for all your 17th-century needs."
+	icon = 'icons/obj/ammo_psi.dmi'
+	icon_state = "shot"
+	caliber = "shot"
+	projectile_type = "/obj/item/projectile/bullet/shot"
