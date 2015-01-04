@@ -265,3 +265,33 @@
 
 	add_fingerprint(user)
 	return
+
+/*
+ * Psi-only weapons from this point on.
+ * Boring sword
+ * Cutlass
+ */
+/obj/item/weapon/psi_sword
+	name = "sword"
+	desc = "So bog-standard that we're not entirely sure what sort of sword it is. Surprisingly light."
+	icon = 'icons/obj/weapons_psi.dmi'
+	icon_state = "sword"
+	item_state = "sword"
+	flags = FPRINT | TABLEPASS | CONDUCT
+	slot_flags = SLOT_BELT
+	force = 35
+	throwforce = 10
+	sharp = 1
+	edge = 1
+	w_class = 3
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
+	IsShield()
+		return 1
+
+
+/obj/item/weapon/psi_sword/cutlass
+	name = "cutlass"
+	desc = "A short, slightly curved sword. Good in close quarters, like on boats or space boats."
+	icon_state = "cutlass"
+	item_state = "cutlass"

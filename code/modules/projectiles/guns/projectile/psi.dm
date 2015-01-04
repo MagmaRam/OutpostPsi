@@ -21,7 +21,6 @@
 	name = "blunderbuss"
 	desc = "An ancient, large-bore gun. Fires lead shot."
 	icon = 'icons/obj/gun_psi.dmi'
-	icon_override = 'icons/mob/back_psi.dmi'
 	slot_flags = SLOT_BACK
 	item_state = "shotgun"
 	icon_state = "blunderbuss"
@@ -54,6 +53,5 @@
 	name = "blunderbuss pistol"
 	desc = "A weapon commonly seen with pirates and cavalry."
 	slot_flags = SLOT_BELT
-	icon_override = null
 	item_state = "gun"
 	icon_state = "bpistol"
